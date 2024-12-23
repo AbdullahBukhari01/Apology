@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I'm Really Sorry, Sweet Behn 💕</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ff9a9e, #fecfef);
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .apology-card {
+            background: #fff;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            padding: 20px 30px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+            border: 2px solid #ff6f91;
+            margin: 20px;
+        }
+
+        .apology-card h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #ff6f91;
+        }
+
+        .apology-card p {
+            font-size: 1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .apology-card button {
+            background: #ff6f91;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .apology-card button:hover {
+            background: #e05579;
+        }
+
+        .response-box {
+            display: none;
+            background: #ffe6eb;
+            border: 2px solid #ff6f91;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+            color: #555;
+            font-size: 1em;
+        }
+
+        .response-box.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .floral-decoration {
+            position: absolute;
+            background: #ffc1e3;
+            border-radius: 50%;
+            opacity: 0.7;
+            z-index: -1;
+        }
+
+        .floral-decoration.one {
+            top: 5%;
+            left: 10%;
+            width: 200px;
+            height: 200px;
+        }
+
+        .floral-decoration.two {
+            bottom: 5%;
+            right: 10%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .floral-decoration.three {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+        }
+
+        .flower {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background: url('https://example.com/flower.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .flower.one {
+            top: 15%;
+            left: 20%;
+        }
+
+        .flower.two {
+            bottom: 20%;
+            right: 25%;
+        }
+
+        .flower.three {
+            top: 40%;
+            left: 60%;
+        }
+
+        .heart-decoration {
+            position: absolute;
+            font-size: 4rem;
+            color: #ff6f91;
+            opacity: 0.5;
+        }
+
+        .heart-decoration.one {
+            top: 20%;
+            left: 15%;
+        }
+
+        .heart-decoration.two {
+            bottom: 10%;
+            right: 20%;
+        }
+
+        .heart-decoration.three {
+            top: 50%;
+            right: 5%;
+        }
+
+        @media (max-width: 768px) {
+            .apology-card {
+                padding: 15px 20px;
+                max-width: 90%;
+            }
+
+            .apology-card h1 {
+                font-size: 1.8em;
+            }
+
+            .apology-card p {
+                font-size: 0.9em;
+            }
+
+            .response-box {
+                font-size: 0.9em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="apology-card">
+        <h1>I'm Really Sorry, My Sweet Behn 💕</h1>
+        <p>
+            I know I made a mistake 😔, and for that, I am deeply sorry. Please know that it was never my intention to hurt you. ❤️ You mean the world to me, and I hope you can find it in your heart to forgive me. 🙏
+        </p>
+        <p>
+            You are my strength, my guide, and my Sweet Behn 🌸, and I cherish every moment we share. Let me make it up to you and bring back the smile I adore so much. 😊💖
+        </p>
+        <button onclick="showResponse()">Accept My Apology</button>
+        <div id="response" class="response-box">
+            Thank you so much for forgiving me, Sweet Behn! 💖 Your kindness means everything to me. 🌸❤️
+        </div>
+    </div>
+    <div class="floral-decoration one"></div>
+    <div class="floral-decoration two"></div>
+    <div class="floral-decoration three"></div>
+    <div class="flower one"></div>
+    <div class="flower two"></div>
+    <div class="flower three"></div>
+    <div class="heart-decoration one">❤️</div>
+    <div class="heart-decoration two">💕</div>
+    <div class="heart-decoration three">💖</div>
+
+    <script>
+        function showResponse() {
+            document.getElementById('response').classList.add('active');
+        }
+    </script>
+</body>
+</html>
